@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding: 6px 0;
+    background-color: #2666CF;
+}
+.medsos ul li {
+    display: inline-block;
+    color: #ffff;
+    margin-right: 15px;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.container::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: #2666CF;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color: #2666CF;
+    color: #ffff;
+}
+.active {
+    background-color: #2666CF;
+    color: #ffff;
+}
+.banner {
+    height: 60vh;
+    background-image: url(images/marvin-meyer-SYTO3xs06fU-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.banner h2 {
+    color: #ffff;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid #fff;
+}
+section {
+    padding: 30px 0;
+}
+section h3 {
+    text-align: center;
+    padding: 30px 0;
+    color: #2666CF;
+}
+.about, .news p {
+    color: #0f0e0e;
+    word-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+footer {
+    padding: 50px 0;
+    background-color: #3e6585;
+    color: #ffff;
+    text-align: center;
+}
+footer ul {
+    text-align: left;
+}
+.bg-loader {
+    background-color: #b1b1b1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+    border-top-color: #2666CF ;
+    border-right-color: #2666CF ;
+    border-bottom-color: #2666CF ;
+    animation: muter .8s linear infinite;
+}
+.label {
+    background-color: #2666CF;
+    color: #ffff;
+}
+.slide {
+    max-width: auto;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.slide1,.slide2,.slide3 {
+    position: absolute;
+    width: 800px;
+    height: 500px;
+}
+.slide1 {
+    background: url(images/249758640_207206304750485_8934429242340081445_n.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade 10s infinite;
+    -webkit-animation: fade 10s infinite;
+}
+.slide2 {
+    background: url(images/249843934_277787957576558_1254344986532542525_n.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade2 10s infinite;
+    -webkit-animation: fade2 10s infinite;
+}
+.slide3 {
+    background: url(images/249859142_213871010817503_3392216159210906572_n.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade3 10s infinite;
+    -webkit-animation: fade3 10s infinite;
+}
+@keyframes fade {
+    0%{opacity: 1;}
+    33.333% {opacity: 0;}
+    66.666% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fade2 {
+    0%{opacity: 0;}
+    33.333% {opacity: 1;}
+    66.666% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade3 {
+    0%{opacity: 0;}
+    33.333% {opacity: 0;}
+    66.666% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes muter {
+    100% {
+        transform: rotate(360deg);
+    }
+}
